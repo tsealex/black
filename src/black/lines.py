@@ -632,7 +632,7 @@ class EmptyLineTracker:
 
         if current_line.is_docstring:
             if self.previous_line.is_class:
-                return 0, 1
+                return 0, 0
             if self.previous_line.opens_block and self.previous_line.is_def:
                 return 0, 0
 
